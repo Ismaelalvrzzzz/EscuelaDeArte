@@ -1,0 +1,555 @@
+.srt-1, .srt-2, .srt-3, .srt-4, .srt-5, .srt-6, .srt-7, .srt-8, .srt-9 {
+        fill: none;
+        stroke: #de1d61;
+      }
+
+      .srt-1, .srt-2, .srt-3, .srt-4, .srt-5, .srt-9 {
+        stroke-miterlimit: 10;
+      }
+
+      .srt-1, .srt-2, .srt-3, .srt-4, .srt-6, .srt-7, .srt-8 {
+        stroke-linecap: round;
+      }
+
+      .srt-1, .srt-9 {
+        stroke-width: 7px;
+      }
+
+      .srt-2, .srt-5, .srt-6 {
+        stroke-width: 6px;
+      }
+
+      .srt-3 {
+        stroke-width: 4px;
+      }
+
+      .srt-4 {
+        stroke-width: 3px;
+      }
+
+      .srt-10 {
+        fill: #de1d61;
+        font-size: 20px;
+        font-family: Montserrat-Bold, Montserrat;
+        font-weight: 700;
+      }
+      
+      .srt-11 {
+      font-size: 16px;
+      font-family: Montserrat-Bold, Montserrat;
+      font-weight: 700;
+      }
+
+      .srt-11, .srt-12 {
+        fill: #de317a;
+      }
+
+      .srt-13 {
+        letter-spacing: 0em;
+      }
+
+      .srt-14 {
+        letter-spacing: 0em;
+      }
+
+      .srt-15 {
+        letter-spacing: 0em;
+      }
+
+      .srt-16 {
+        letter-spacing: -.02em;
+      }
+
+      .srt-17 {
+        letter-spacing: -.02em;
+      }
+
+      .srt-18 {
+        letter-spacing: -.03em;
+      }
+
+      .srt-19 {
+        letter-spacing: -.04em;
+      }
+
+      .srt-6, .srt-7, .srt-8 {
+        stroke-miterlimit: 11;
+      }
+
+      .srt-7 {
+        stroke-width: 5.5px;
+      }
+
+      .srt-8 {
+        stroke-width: 5px;
+      }
+
+      .srt-20 {
+        letter-spacing: 0em;
+      }
+
+      .srt-21 {
+        letter-spacing: -.01em;
+      }
+
+      .srt-22 {
+        letter-spacing: 0em;
+      }
+
+      .srt-23 {
+        letter-spacing: 0em;
+      }
+
+      .srt-12 {
+        font-family: Montserrat-Bold, Montserrat;
+        font-size: 46.17px;
+        font-weight: 700;
+      }
+
+
+[id^="circulo"] {
+  cursor: pointer;
+  transition: fill 0.25s ease, stroke-width 0.25s ease;
+}
+
+[id^="circulo"]:hover {
+  fill: #e71e73;
+  stroke-width: 7;
+}
+
+
+[id^="ir-planta"] {
+  cursor: pointer;
+  transition: fill 0.25s ease, stroke-width 0.25s ease;
+}
+
+[id^="ir-planta"]:hover {
+  fill: #f9c7dc;
+  stroke-width: 7;
+}
+
+      
+
+.map-app {
+  width: 100ww;
+  height: 100vh;
+  display: flex;
+
+  position: relative;
+}
+
+.sidebar {
+  width: 360px;
+  height: 100vh;
+
+  background: #fff;
+
+  border-right: 1px solid #ddd;
+
+  position: relative;
+
+  z-index: 20;
+
+  transform: translateX(-100%);
+
+  transition: transform 0.35s ease;
+
+  flex-shrink: 0;
+
+}
+
+.sidebar.open {
+
+  transform: translateX(0);
+}
+
+.map-container {
+
+  flex: 1;
+
+  height: 100%;
+
+  position: relative;
+
+  overflow: hidden;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+.plano {
+  display: none;
+}
+
+.plano.activo {
+  display: block;
+}
+
+#Mapa_0 {
+  width: 70%;
+  height: 70%;
+}
+
+#Mapa_1 {
+  width: 70%;
+  height: 70%;
+}
+
+#Mapa_2 {
+  width: 70%;
+  height: 70%;
+}
+
+#Mapa_3 {
+  width: 70%;
+  height: 70%;
+}
+
+#Capa_4 {
+  width: 120px;
+  height: auto;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
+
+.cls-1 {
+  letter-spacing: -.01em;
+}
+
+.cls-2 {
+  font-size: 46.17px;
+}
+
+.cls-2, .cls-3, .cls-4, .cls-5 {
+  fill: #de1d61;
+  font-family: Montserrat-Bold, Montserrat;
+  font-variation-settings: 'wght' 700;
+  font-weight: 700;
+}
+
+.cls-6 {
+  letter-spacing: -.05em;
+}
+
+.cls-7, .cls-8, .cls-9, .cls-10, .cls-11, .cls-12, .cls-13, .cls-14 {
+  fill: none;
+  stroke: #de1d61;
+}
+
+.cls-7, .cls-8, .cls-9, .cls-11, .cls-12, .cls-13, .cls-14 {
+  stroke-linecap: round;
+}
+
+.cls-7, .cls-8, .cls-10, .cls-11, .cls-12, .cls-13 {
+  stroke-miterlimit: 10;
+}
+
+.cls-7, .cls-9, .cls-10 {
+  stroke-width: 6px;
+}
+
+.cls-8 {
+  stroke-width: 7.31px;
+}
+
+.cls-3 {
+  font-size: 16px;
+}
+
+.cls-15 {
+  letter-spacing: -.02em;
+}
+
+.cls-16 {
+  letter-spacing: 0em;
+}
+
+.cls-17 {
+  letter-spacing: 0em;
+}
+
+.cls-18 {
+  letter-spacing: 0em;
+}
+
+.cls-9, .cls-14 {
+  stroke-miterlimit: 11;
+}
+
+.cls-11 {
+  stroke-width: 4px;
+}
+
+.cls-12 {
+  stroke-width: 3px;
+}
+
+.cls-19 {
+  letter-spacing: 0em;
+}
+
+.cls-4 {
+  font-size: 21px;
+}
+
+.cls-13 {
+  stroke-width: 7.06px;
+}
+
+.cls-20 {
+  letter-spacing: -.04em;
+}
+
+.cls-21 {
+  letter-spacing: -.03em;
+}
+
+.cls-14 {
+  stroke-width: 5px;
+}
+
+.cls-22 {
+  letter-spacing: -.02em;
+}
+
+.cls-23 {
+  letter-spacing: -.05em;
+}
+
+.cls-24 {
+  letter-spacing: 0em;
+}
+
+.cls-5 {
+  font-size: 20px;
+}
+
+.cls-25 {
+  letter-spacing: 0em;
+}
+
+
+
+.p1-1 {
+  letter-spacing: -.01em;
+}
+
+.p1-2 {
+  font-size: 46.17px;
+}
+
+.p1-2, .p1-3, .p1-4, .p1-5 {
+  fill: #de1d61;
+  font-family: Montserrat-Bold, Montserrat;
+  font-variation-settings: 'wght' 700;
+  font-weight: 700;
+}
+
+.p1-6, .p1-7, .p1-8 {
+  stroke-width: 6px;
+}
+
+.p1-6, .p1-7, .p1-8, .p1-9, .p1-10, .p1-11, .p1-12 {
+  fill: none;
+  stroke: #de1d61;
+}
+
+.p1-6, .p1-7, .p1-9, .p1-10, .p1-11, .p1-12 {
+  stroke-linecap: round;
+}
+
+.p1-6, .p1-8, .p1-9, .p1-10, .p1-11 {
+  stroke-miterlimit: 10;
+}
+
+.p1-3 {
+  font-size: 16px;
+}
+
+.p1-13 {
+  letter-spacing: -.02em;
+}
+
+.p1-14 {
+  letter-spacing: 0em;
+}
+
+.p1-15 {
+  letter-spacing: 0em;
+}
+
+.p1-16 {
+  letter-spacing: 0em;
+}
+
+.p1-7, .p1-12 {
+  stroke-miterlimit: 11;
+}
+
+.p1-9 {
+  stroke-width: 4px;
+}
+
+.p1-10 {
+  stroke-width: 3px;
+}
+
+.p1-17 {
+  letter-spacing: 0em;
+}
+
+.p1-11 {
+  stroke-width: 7px;
+}
+
+.p1-4 {
+  font-size: 21px;
+}
+
+.p1-12 {
+  stroke-width: 5.5px;
+}
+
+.p1-18 {
+  letter-spacing: -.04em;
+}
+
+.p1-19 {
+  letter-spacing: -.02em;
+}
+
+.p1-20 {
+  letter-spacing: 0em;
+}
+
+.p1-5 {
+  font-size: 20px;
+}
+
+.p1-21 {
+  letter-spacing: 0em;
+}
+
+
+
+.p2-1 {
+  letter-spacing: -.01em;
+}
+
+.p2-2 {
+  font-size: 46.17px;
+}
+
+.p2-2, .p2-3, .p2-4, .p2-5 {
+  fill: #de1d61;
+  font-family: Montserrat-Bold, Montserrat;
+  font-variation-settings: 'wght' 700;
+  font-weight: 700;
+}
+
+.p2-6, .p2-7, .p2-8 {
+  stroke-width: 6px;
+}
+
+.p2-6, .p2-7, .p2-8, .p2-9, .p2-10, .p2-11, .p2-12, .p2-13 {
+  fill: none;
+  stroke: #de1d61;
+}
+
+.p2-6, .p2-7, .p2-9, .p2-10, .p2-11, .p2-12, .p2-13 {
+  stroke-linecap: round;
+}
+
+.p2-6, .p2-8, .p2-9, .p2-10, .p2-11, .p2-13 {
+  stroke-miterlimit: 10;
+}
+
+.p2-3 {
+  font-size: 16px;
+}
+
+.p2-14 {
+  letter-spacing: -.02em;
+}
+
+.p2-15 {
+  letter-spacing: 0em;
+}
+
+.p2-16 {
+  letter-spacing: 0em;
+}
+
+.p2-17 {
+  letter-spacing: -.01em;
+}
+
+.p2-7, .p2-12 {
+  stroke-miterlimit: 11;
+}
+
+.p2-9 {
+  stroke-width: 4px;
+}
+
+.p2-10 {
+  stroke-width: 3px;
+}
+
+.p2-18 {
+  letter-spacing: 0em;
+}
+
+.p2-11 {
+  stroke-width: 7px;
+}
+
+.p2-4 {
+  font-size: 21px;
+}
+
+.p2-12 {
+  stroke-width: 5.5px;
+}
+
+.p2-19 {
+  letter-spacing: -.04em;
+}
+
+.p2-13 {
+  stroke-width: 6.69px;
+}
+
+.p2-20 {
+  letter-spacing: -.02em;
+}
+
+.p2-21 {
+  letter-spacing: 0em;
+}
+
+.p2-5 {
+  font-size: 20px;
+}
+
+.p2-22 {
+  letter-spacing: 0em;
+}
+
+
+
+
+      .els-1 {
+        fill: #e61a5f;
+      }
+
+      .els-2 {
+        fill: #e61a60;
+      }
+
+      .els-3 {
+        fill: #fffffe;
+      }
